@@ -162,9 +162,9 @@ void setup()
   //Heltec.begin(true /*DisplayEnable Enable*/, false /*LoRa Disable*/, true /*Serial Enable*/);
   display = new SSD1306Wire(0x3c, SDA_OLED, SCL_OLED, RST_OLED, GEOMETRY_128_64);
   display->init();
-  display->flipScreenVertically();
-  display->setFont(ArialMT_Plain_10);
-  display->setContrast(255);
+  //display->flipScreenVertically();
+  //display->setFont(ArialMT_Plain_10);
+  //display->setContrast(255);
 
   drawLines();
   delay(1000);
